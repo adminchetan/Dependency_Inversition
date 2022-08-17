@@ -6,16 +6,18 @@ using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 using BL;
+using DependencyInversioon.Filters;
 
 namespace DependencyInversioon.Controllers
 {
     public class HomeController : Controller
     {
     
-        private IEmployee emp = null;
-        private IStudent std = null;
+        private IEmployee emp = null;    // create instance of interface
+        private IStudent std = null;       // create instance of interface
 
-        public HomeController(IEmployee employee,IStudent student)
+
+        public HomeController(IEmployee employee,IStudent student)    //call constructor
         {
             emp = employee;
             std = student;
@@ -37,11 +39,13 @@ namespace DependencyInversioon.Controllers
             return View();
         }
 
+        [MyCustomExcepctions]
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            //ViewBag.Message = "Your application description page.";
+            int a = 9;
+            //a=a / 0;
+            return View("abc");
         }
 
         public ActionResult Contact()
