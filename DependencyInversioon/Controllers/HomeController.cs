@@ -26,15 +26,15 @@ namespace DependencyInversioon.Controllers
         public ActionResult Index()
         {
             //int i= emp.getEmployee();
-            List<MyStudentPRoperties> list = std.Getdata();
+           // List<MyStudentPRoperties> list = std.Getdata();
 
      
-           foreach(var obj in list)
-            {
-                var name = obj.name;
-                var Address = obj.Address;
-                var Age = obj.Age;
-            }
+           //foreach(var obj in list)
+           // {
+           //     var name = obj.name;
+           //     var Address = obj.Address;
+           //     var Age = obj.Age;
+           // }
 
             return View();
         }
@@ -48,7 +48,7 @@ namespace DependencyInversioon.Controllers
             return View("abc");
         }
 
-        public ActionResult Contact()
+        public ActionResult GetData()
         {
             ViewBag.Message = "Your contact page.";
 
