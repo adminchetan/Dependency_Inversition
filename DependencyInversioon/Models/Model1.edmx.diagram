@@ -6,6 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="89deded04f6047cebba6d9098eb14895" Name="Diagram1">
         <EntityTypeShape EntityType="uttaraon_neerajModel.info" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="uttaraon_neerajModel.User" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="uttaraon_neerajModel.Employee" Width="1.5" PointX="0.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

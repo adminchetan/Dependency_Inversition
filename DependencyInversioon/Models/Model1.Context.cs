@@ -26,5 +26,7 @@ namespace DependencyInversioon.Models
         }
     
         public virtual DbSet<info> infoes { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
     }
 }
