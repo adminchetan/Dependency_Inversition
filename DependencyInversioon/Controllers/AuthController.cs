@@ -16,7 +16,7 @@ namespace DependencyInversioon.Controllers
         [BasicAuthentication]
         public HttpResponseMessage Get(string gender = "All")
         {
-            string username = Thread.CurrentPrincipal.Identity.Name;
+            string username = Thread.CurrentPrincipal.Identity.Name;    //after authorization identity is created and user name will be stored
 
             using (uttaraon_neerajEntities1 entities = new uttaraon_neerajEntities1())
             {

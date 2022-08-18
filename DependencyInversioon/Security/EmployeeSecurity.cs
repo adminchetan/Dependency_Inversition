@@ -12,9 +12,8 @@ namespace DependencyInversioon.Security
         {
             using ( uttaraon_neerajEntities1 entities = new uttaraon_neerajEntities1())
             {
-                return entities.Users.Any(user =>
-                       user.Username.Equals(username, StringComparison.OrdinalIgnoreCase)
-                                          && user.Password == password);
+                return entities.Users.Any(user =>user.Username.Equals(username, StringComparison
+                    .OrdinalIgnoreCase)&& user.Password == password);// check username and  password  is valid or not
             }
         }
     }
